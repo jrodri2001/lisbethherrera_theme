@@ -1,0 +1,55 @@
+#content {
+  width: 100%;
+  margin: 0;
+  float: none;
+}
+
+@media print {
+  @page {
+	size: 330mm 427mm;
+	margin: 12mm;
+  }
+  
+  .container {
+  	width: 1200px;
+  }
+
+  a[href]:after {
+    content: "";
+  }
+
+  .top-menu-nav{
+	display: none;
+  }
+
+  .menu-item{
+	display: none;
+  }
+
+#et-top-navigation{
+	display: none;
+}
+	
+  #top-header{
+	display: none;
+  }
+
+#main-footer{
+	display: none;
+}
+
+#page-container{
+	padding-top: 2%;
+	margin-top: 1%;
+}
+
+.calculateRow{
+	display:none;
+	}
+
+.printinfo{
+	display: block !important;
+	text-align: center !important;
+		}
+
+}
